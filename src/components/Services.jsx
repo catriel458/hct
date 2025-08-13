@@ -6,14 +6,14 @@ const Services = () => {
   const services = [
     {
       icon: <Zap className="w-8 h-8" />,
-      title: "Entrenamiento Cognitivo-Motor",
-      description: "Revolucionamos el entrenamiento deportivo con tecnología avanzada que mejora la percepción, enfoque y velocidad de reacción mediante simulaciones inteligentes.",
+      title: "Tecnología Deportiva",
+      description: "Entrenamiento cognitivo-motor para mejorar la Percepción, Enfoque, Velocidad de Reacción y Agilidad por medio de entrenamientos simulados. Recopilación y análisis de data.",
       image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       features: [
-        "Análisis de datos en tiempo real",
-        "Entrenamientos adaptativos personalizados",
-        "Métricas de rendimiento avanzadas",
-        "Seguimiento de progreso detallado"
+        "Sistemas de timing inteligente",
+        "GPS deportivos avanzados",
+        "Elementos cognitivos",
+        "Análisis de data en tiempo real"
       ],
       color: "from-purple-500 to-pink-500",
       bgColor: "bg-purple-50",
@@ -23,13 +23,13 @@ const Services = () => {
     {
       icon: <Code className="w-8 h-8" />,
       title: "Desarrollo de Software",
-      description: "Creamos soluciones digitales robustas y escalables, diseñadas específicamente para satisfacer las necesidades únicas de cada cliente y sector.",
+      description: "Soluciones digitales a medida para cada Cliente. Desarrollamos sistemas que logran dar una respuesta adecuada para cada requerimiento.",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       features: [
-        "Arquitectura escalable y moderna",
-        "Integración de sistemas completa",
-        "Soporte técnico especializado 24/7",
-        "Mantenimiento evolutivo continuo"
+        "Sistemas a medida",
+        "Desarrollo específico",
+        "Resolución de problemáticas",
+        "Proyectos completos"
       ],
       color: "from-blue-500 to-cyan-500",
       bgColor: "bg-blue-50",
@@ -38,19 +38,35 @@ const Services = () => {
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Representaciones e Integración",
-      description: "Conectamos a nuestros clientes con las mejores tecnologías del mercado, ofreciendo integración completa y soporte especializado de marcas líderes.",
+      title: "Representaciones",
+      description: "Proveemos e integramos productos para cubrir las necesidades de los Clientes, trabajando en alianza con diferentes empresas para brindar soluciones.",
       image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       features: [
-        "Representación de marcas premium",
-        "Integración end-to-end completa",
-        "Asesoramiento técnico especializado",
-        "Soporte post-implementación"
+        "Hardware y Software",
+        "Marcas de primer nivel",
+        "Integración de productos",
+        "Alianzas estratégicas"
       ],
       color: "from-green-500 to-emerald-500",
       bgColor: "bg-green-50",
       textColor: "text-green-600",
       stats: { value: "50+", label: "Marcas representadas" }
+    },
+    {
+      icon: <Settings className="w-8 h-8" />,
+      title: "Servicios IT",
+      description: "Tenemos más de 10 años brindando servicios de IT. Implementación. Mantenimiento.",
+      image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      features: [
+        "Asesoramiento técnico",
+        "Implementación",
+        "Configuración y soportes",
+        "Mantenimiento continuo"
+      ],
+      color: "from-orange-500 to-red-500",
+      bgColor: "bg-orange-50",
+      textColor: "text-orange-600",
+      stats: { value: "15+", label: "Años de experiencia" }
     }
   ];
 
@@ -85,7 +101,7 @@ const Services = () => {
         <div className="text-center mb-20">
           <div className="inline-flex items-center px-6 py-3 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
             <Sparkles className="w-4 h-4 mr-2" />
-            Soluciones Tecnológicas Avanzadas
+            Conozca nuestro portafolio
           </div>
           <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Nuestros{' '}
@@ -94,8 +110,7 @@ const Services = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Ofrecemos soluciones tecnológicas integrales de vanguardia que transforman la manera en que 
-            las empresas operan, permitiéndoles alcanzar nuevos niveles de eficiencia y competitividad.
+            Conozca nuestro portafolio de servicios
           </p>
         </div>
 
@@ -179,7 +194,7 @@ const Services = () => {
               </span>
             </h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Metodología probada y refinada a lo largo de 15 años para garantizar el éxito rotundo de cada proyecto
+              Metodología probada y refinada para garantizar el éxito de cada proyecto
             </p>
           </div>
 

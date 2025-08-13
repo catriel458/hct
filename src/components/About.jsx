@@ -7,29 +7,29 @@ const About = () => {
     {
       year: "2009",
       title: "Fundación Estratégica",
-      description: "HCT SA nace como representante premium de hardware y software de marcas líderes mundiales en IT, estableciendo bases sólidas en el mercado tecnológico.",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "HCT SA comenzó como representante o reseller de Hardware y Software de diversas marcas de empresas de primer nivel de IT.",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       icon: <Building className="w-6 h-6" />
     },
     {
       year: "2012",
       title: "Expansión de Servicios",
-      description: "Incorporamos servicios especializados de asesoramiento técnico, implementación avanzada y soporte 24/7, consolidando nuestra propuesta integral.",
+      description: "Se fueron agregando servicios de IT asociados a estas representaciones, fundamentalmente de asesoramiento, implementación y configuración/soportes.",
       image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       icon: <Users className="w-6 h-6" />
     },
     {
       year: "2016",
       title: "Innovación en Desarrollos",
-      description: "Iniciamos el desarrollo de soluciones personalizadas y proyectos completos, posicionándonos como líderes en transformación digital.",
+      description: "Se empezó a incursionar en servicios puntuales requeridos por los clientes, así como en desarrollos específicos para resolver problemáticas o realizar proyectos completos.",
       image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       icon: <Lightbulb className="w-6 h-6" />
     },
     {
       year: "2020",
       title: "Revolución Deportiva",
-      description: "Pioneros en tecnología deportiva avanzada, desarrollamos sistemas de automatización que democratizan el acceso a herramientas de élite.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "Se agregó innovación dedicada a representaciones de productos de tecnología deportiva, como lanzapelotas, trackers deportivos, usos de elementos cognitivos.",
+      image: "https://images.unsplash.com/photo-1566932769119-7a1fb6d7ce23?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       icon: <Trophy className="w-6 h-6" />
     }
   ];
@@ -38,39 +38,39 @@ const About = () => {
     {
       icon: <Lightbulb className="w-8 h-8" />,
       title: "Innovación Constante",
-      description: "Investigamos y aplicamos las tecnologías más avanzadas para crear soluciones que marquen la diferencia en el mercado.",
-      image: "https://images.unsplash.com/photo-1553484771-cc0d9b8c2e92?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "Desarrollamos soluciones específicas para el mercado, como sistemas para automatizar los entrenamientos.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       color: "from-blue-500 to-cyan-500"
     },
     {
       icon: <Users className="w-8 h-8" />,
       title: "Colaboración Estratégica",
-      description: "Construimos alianzas sólidas con empresas líderes globales para ofrecer las mejores soluciones tecnológicas del mercado.",
-      image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "Trabajamos en alianza con diferentes empresas para brindar soluciones integrales.",
+      image: "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       color: "from-green-500 to-emerald-500"
     },
     {
       icon: <Trophy className="w-8 h-8" />,
       title: "Excelencia Garantizada",
-      description: "Nos comprometemos a entregar resultados excepcionales que superen las expectativas de nuestros clientes más exigentes.",
-      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "Más de 15 años brindando servicios de IT con implementación y mantenimiento de calidad.",
+      image: "https://plus.unsplash.com/premium_photo-1695185954894-e9382c6f4da8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       color: "from-purple-500 to-pink-500"
     }
   ];
 
   const achievements = [
-    { text: "15+ años de liderazgo en el mercado tecnológico", icon: <Calendar className="w-5 h-5" /> },
-    { text: "Más de 100 proyectos exitosos completados", icon: <Target className="w-5 h-5" /> },
-    { text: "Especialistas reconocidos en tecnología deportiva", icon: <Zap className="w-5 h-5" /> },
-    { text: "Clientes satisfechos en sector público y privado", icon: <Award className="w-5 h-5" /> },
-    { text: "Representaciones exclusivas de marcas internacionales", icon: <Building className="w-5 h-5" /> }
+    { text: "Desde 2009 en el mercado tecnológico", icon: <Calendar className="w-5 h-5" /> },
+    { text: "Representantes de marcas de primer nivel", icon: <Target className="w-5 h-5" /> },
+    { text: "Especialistas en tecnología deportiva", icon: <Zap className="w-5 h-5" /> },
+    { text: "Clientes en sector público y privado", icon: <Award className="w-5 h-5" /> },
+    { text: "Desarrollos específicos a medida", icon: <Building className="w-5 h-5" /> }
   ];
 
   const stats = [
-    { value: "15+", label: "Años de Experiencia", color: "text-blue-600" },
-    { value: "100+", label: "Proyectos Completados", color: "text-green-600" },
-    { value: "50+", label: "Clientes Satisfechos", color: "text-purple-600" },
-    { value: "24/7", label: "Soporte Técnico", color: "text-orange-600" }
+    { value: "2009", label: "Año de fundación", color: "text-blue-600" },
+    { value: "100+", label: "Proyectos realizados", color: "text-green-600" },
+    { value: "15+", label: "Años de servicios IT", color: "text-purple-600" },
+    { value: "24/7", label: "Soporte técnico", color: "text-orange-600" }
   ];
 
   return (
@@ -86,7 +86,7 @@ const About = () => {
         <div className="text-center mb-20">
           <div className="inline-flex items-center px-6 py-3 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold mb-6">
             <Users className="w-4 h-4 mr-2" />
-            Nuestra Historia de Éxito
+            Nuestra Historia
           </div>
           <h2 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
             Quiénes{' '}
@@ -95,8 +95,8 @@ const About = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Con más de 15 años transformando ideas en realidades tecnológicas, HCT Group se ha consolidado 
-            como el socio estratégico de elección para empresas que buscan innovación de vanguardia.
+            HCT SA comenzó en 2009 como representante o reseller de Hardware y Software 
+            de diversas marcas de empresas de primer nivel de IT.
           </p>
         </div>
 
@@ -112,14 +112,12 @@ const About = () => {
                 </span>
               </h3>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Desde nuestros inicios en 2009, hemos evolucionado de ser representantes tecnológicos 
-                a convertirnos en pioneros de la innovación, especialmente en el revolucionario campo 
-                de la tecnología deportiva.
+                Con el paso de los años se fueron agregando servicios de IT asociados a estas representaciones, 
+                fundamentalmente de asesoramiento, implementación y configuración/soportes.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Hoy lideramos la democratización de tecnologías de élite, llevando herramientas 
-                profesionales a todos los niveles de competencia y transformando la manera en que 
-                los atletas entrenan y compiten.
+                Más adelante se empezó a incursionar ya en servicios puntuales requeridos por los clientes, 
+                así como en desarrollos específicos para resolver problemáticas o realizar proyectos completos.
               </p>
             </div>
 
@@ -155,7 +153,7 @@ const About = () => {
           <div className="relative">
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                 alt="HCT Group Team"
                 className="w-full h-96 object-cover rounded-3xl shadow-2xl"
               />
@@ -182,7 +180,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* Timeline Section */}
+        {/* Timeline Section - Continúa igual estructura pero con el texto actualizado */}
         <div className="mb-32">
           <div className="text-center mb-16">
             <h3 className="text-4xl font-bold text-gray-900 mb-6">

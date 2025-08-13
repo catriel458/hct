@@ -6,75 +6,63 @@ const Clients = () => {
   const clients = [
     {
       name: "Hospital Garrahan",
-      sector: "Salud Especializada",
+      sector: "Salud",
       icon: <Heart className="w-10 h-10" />,
-      description: "Implementación integral del sistema de neonatología con historia clínica unificada, revolucionando la atención pediátrica.",
+      description: "Integración del sistema de neonatología con el sistema de historia clínica del Hospital Garrahan (incluyendo hardware, software y configuraciones).",
       project: "Sistema de Historia Clínica Integrado",
-      image: "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://radioprovincia.gba.gob.ar/images/Hospital_Garrahan.jpg",
       color: "text-red-600",
       bg: "bg-red-50",
       gradient: "from-red-500 to-pink-500",
-      impact: "40% reducción en tiempos de consulta"
+      impact: "Sistema neonatología integrado"
     },
     {
       name: "Cucaiba",
       sector: "Salud Pública",
       icon: <Heart className="w-10 h-10" />,
-      description: "Desarrollo de soluciones tecnológicas avanzadas para optimizar la gestión hospitalaria y mejorar la atención al paciente.",
-      project: "Sistema de Gestión Hospitalaria Inteligente",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "Sistema de gestión de donación de Órganos. CUCAIBA.",
+      project: "Sistema de Gestión de Donación",
+      image: "https://www.cucaiba.gba.gov.ar/wp-content/uploads/2021/10/web-4.jpg",
       color: "text-blue-600",
       bg: "bg-blue-50",
       gradient: "from-blue-500 to-cyan-500",
-      impact: "60% mejora en eficiencia operativa"
+      impact: "Gestión completa de donaciones"
     },
     {
       name: "Provincia de Buenos Aires",
-      sector: "Gobierno Digital",
+      sector: "Gobierno",
       icon: <Building className="w-10 h-10" />,
-      description: "Modernización completa de sistemas gubernamentales con implementación de tecnologías de vanguardia para ciudadanos.",
-      project: "Plataforma de Transformación Digital",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "Sistema de denuncia por Violencia de Género, desarrollo realizado en PHP. Proyecto UNOPS para la Provincia de Buenos Aires.",
+      project: "Sistema de Denuncia por Violencia de Género",
+      image: "https://yt3.googleusercontent.com/m6bVPjkK2E-5pSfTMAiby1QqBENydQ2D6QSbV3vq6ZxQIO99FDrE7Z0IBqvhppo9bNml9HNanlo=s900-c-k-c0x00ffffff-no-rj",
       color: "text-green-600",
       bg: "bg-green-50",
       gradient: "from-green-500 to-emerald-500",
-      impact: "80% digitalización de trámites"
+      impact: "Proyecto UNOPS implementado"
     },
     {
-      name: "Programa Sumar",
+      name: "Ministerio de Salud",
       sector: "Salud Nacional",
       icon: <Users className="w-10 h-10" />,
-      description: "Implementación de tecnología de punta para programas nacionales de salud con alcance federal y gestión centralizada.",
-      project: "Sistema Nacional de Gestión de Beneficiarios",
-      image: "https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "Sistema de acceso para el Ministerio de Salud.",
+      project: "Sistema de Acceso",
+      image: "https://portal.cofa.org.ar/wp-content/uploads/2020/03/ministerio-de-salud-final.png",
       color: "text-purple-600",
       bg: "bg-purple-50",
       gradient: "from-purple-500 to-indigo-500",
-      impact: "2M+ beneficiarios atendidos"
+      impact: "Acceso unificado"
     },
     {
       name: "Cotesma",
-      sector: "Sector Empresarial",
+      sector: "Sector Privado",
       icon: <Building className="w-10 h-10" />,
-      description: "Desarrollo de soluciones tecnológicas empresariales integrales con enfoque en automatización y eficiencia operacional.",
-      project: "Suite de Gestión Empresarial Integral",
-      image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "COTESMA, Adecuación, desarrollo y soporte de API realizado en PHP.",
+      project: "Desarrollo y Soporte de API",
+      image: "https://lamontana-s3.cdn.net.ar/s3i233/2023/07/lamontana/images/11/16/111652_6cd9296a1bdfb7285535b2221347afcdfc65c23ae61ce2c6fdbc637a8296d1d7/lg.webp",
       color: "text-indigo-600",
       bg: "bg-indigo-50",
       gradient: "from-indigo-500 to-purple-500",
-      impact: "50% reducción en costos operativos"
-    },
-    {
-      name: "Iniciativa Spotlight",
-      sector: "Organizaciones Internacionales",
-      icon: <Award className="w-10 h-10" />,
-      description: "Plataforma tecnológica avanzada para organizaciones internacionales con estándares de seguridad y escalabilidad globales.",
-      project: "Plataforma Global de Gestión",
-      image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      color: "text-orange-600",
-      bg: "bg-orange-50",
-      gradient: "from-orange-500 to-red-500",
-      impact: "Global reach en 15+ países"
+      impact: "API completa en PHP"
     }
   ];
 
@@ -83,7 +71,7 @@ const Clients = () => {
       name: "Sector Salud",
       icon: <Heart className="w-8 h-8" />,
       percentage: "40%",
-      projects: "25+ proyectos exitosos",
+      projects: "Múltiples proyectos",
       color: "text-red-600",
       gradient: "from-red-500 to-pink-500",
       image: "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -92,7 +80,7 @@ const Clients = () => {
       name: "Sector Público",
       icon: <Building className="w-8 h-8" />,
       percentage: "35%",
-      projects: "20+ implementaciones",
+      projects: "Implementaciones exitosas",
       color: "text-blue-600",
       gradient: "from-blue-500 to-cyan-500",
       image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -101,7 +89,7 @@ const Clients = () => {
       name: "Sector Privado",
       icon: <Users className="w-8 h-8" />,
       percentage: "25%",
-      projects: "15+ transformaciones",
+      projects: "Desarrollos a medida",
       color: "text-green-600",
       gradient: "from-green-500 to-emerald-500",
       image: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
@@ -110,28 +98,28 @@ const Clients = () => {
 
   const testimonials = [
     {
-      text: "HCT Group transformó completamente nuestra infraestructura tecnológica. Su solución integral mejoró significativamente nuestra eficiencia operativa y la calidad de atención a nuestros pacientes más vulnerables.",
-      author: "Dr. María González",
-      position: "Director de Tecnología",
-      company: "Hospital Garrahan",
+      text: "Se ha provisto de equipamiento y software a diferentes clientes, especialmente del sector público.",
+      author: "Representaciones",
+      position: "Equipamiento",
+      company: "Hardware y Software",
       rating: 5,
       image: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
-      text: "La implementación fue impecable y el soporte técnico es excepcional. HCT Group no solo cumplió con nuestras expectativas, sino que las superó ampliamente. Los recomendamos sin dudas.",
-      author: "Ing. Carlos Rodríguez",
-      position: "Responsable de Sistemas",
-      company: "Provincia de Buenos Aires",
+      text: "Desarrollo de Software a medida para resolver problemáticas específicas y realizar proyectos completos.",
+      author: "Desarrollo",
+      position: "Software",
+      company: "Soluciones a medida",
       rating: 5,
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
     },
     {
-      text: "Profesionales altamente capacitados que realmente entienden las complejidades del sector salud. Su tecnología nos permitió modernizar procesos críticos con total confiabilidad.",
-      author: "Dra. Ana Martínez",
-      position: "Gerente de Sistemas",
-      company: "Cucaiba",
+      text: "Servicios de IT con asesoramiento, implementación y configuración/soportes durante más de 10 años.",
+      author: "Servicios IT",
+      position: "Soporte",
+      company: "Implementación",
       rating: 5,
-      image: "https://images.unsplash.com/photo-1594824388084-ce6e072d2145?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: "https://hireline.io/blog/wp-content/uploads/2022/07/habilidades-de-un-programador-1200x900.jpg"
     }
   ];
 
@@ -161,8 +149,7 @@ const Clients = () => {
             </span>
           </h2>
           <p className="text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
-            Colaboramos con organizaciones líderes en diversos sectores, entregando soluciones 
-            tecnológicas que generan impacto real y transforman sus operaciones.
+            Algunos de nuestros clientes
           </p>
         </div>
 
@@ -205,7 +192,7 @@ const Clients = () => {
                 </div>
 
                 <div className="bg-white/10 rounded-xl p-4 backdrop-blur-sm border border-white/20">
-                  <div className="text-sm text-blue-300 mb-1">Impacto Logrado:</div>
+                  <div className="text-sm text-blue-300 mb-1">Resultado:</div>
                   <div className="text-white font-semibold">{client.impact}</div>
                 </div>
               </div>
@@ -223,7 +210,7 @@ const Clients = () => {
               </span>
             </h3>
             <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-              Distribución estratégica de nuestros proyectos por sector de impacto
+              Distribución estratégica de nuestros proyectos por sector
             </p>
           </div>
 
@@ -268,14 +255,11 @@ const Clients = () => {
         <div className="mb-32">
           <div className="text-center mb-16">
             <h3 className="text-4xl font-bold text-white mb-6">
-              Testimonios de{' '}
+              Desarrollo de{' '}
               <span className="bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
-                Confianza
+                Software a medida
               </span>
             </h3>
-            <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-              Palabras de quienes han experimentado la excelencia de nuestras soluciones
-            </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
@@ -320,72 +304,10 @@ const Clients = () => {
           </div>
         </div>
 
-        {/* Success Metrics */}
-        <div className="bg-gradient-to-r from-white/10 to-white/5 backdrop-blur-2xl rounded-3xl p-16 border border-white/20 shadow-2xl mb-20">
-          <div className="text-center mb-12">
-            <h3 className="text-4xl font-bold text-white mb-6">
-              Resultados que{' '}
-              <span className="bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
-                Hablan
-              </span>
-            </h3>
-            <p className="text-xl text-blue-200">
-              Métricas de éxito que demuestran nuestro compromiso con la excelencia
-            </p>
-          </div>
+ 
+        
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-3">
-                98%
-              </div>
-              <div className="text-blue-200 font-medium">Satisfacción del Cliente</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent mb-3">
-                100%
-              </div>
-              <div className="text-blue-200 font-medium">Proyectos Entregados</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent mb-3">
-                50+
-              </div>
-              <div className="text-blue-200 font-medium">Organizaciones Confiando</div>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl font-bold bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent mb-3">
-                24/7
-              </div>
-              <div className="text-blue-200 font-medium">Soporte Especializado</div>
-            </div>
-          </div>
-        </div>
-
-        {/* CTA Section */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-xl rounded-3xl p-12 border border-white/20 shadow-2xl">
-            <h3 className="text-4xl font-bold text-white mb-6">
-              ¿Listo para ser nuestro próximo{' '}
-              <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                Caso de Éxito?
-              </span>
-            </h3>
-            <p className="text-xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
-              Únete a las organizaciones líderes que ya han transformado sus operaciones 
-              con nuestras soluciones tecnológicas de vanguardia.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-10 py-5 rounded-2xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center justify-center space-x-3 font-semibold text-lg shadow-xl hover:shadow-2xl hover:scale-105">
-                <span>Comenzar Mi Proyecto</span>
-                <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="border-2 border-white/30 text-white px-10 py-5 rounded-2xl hover:bg-white/10 backdrop-blur-sm transition-all duration-300 font-semibold text-lg hover:scale-105">
-                Ver Más Casos de Éxito
-              </button>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

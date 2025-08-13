@@ -124,12 +124,10 @@ const Header = () => {
                   : 'text-white/80 hover:text-white hover:bg-white/10'
               }`}
             >
-              <Phone className="w-4 h-4" />
-              <span>+54 11 5217-5666</span>
+             
+        
             </a>
-            <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-200 font-semibold shadow-lg hover:shadow-xl hover:scale-105">
-              Consultar Proyecto
-            </button>
+        
           </div>
 
           {/* Mobile menu button */}

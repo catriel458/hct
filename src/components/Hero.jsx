@@ -67,7 +67,7 @@ const Hero = () => {
             <div className="w-8 h-8 border-2 border-white/50 rounded-full flex items-center justify-center">
               <ArrowRight className="w-4 h-4 text-white/70 rotate-90" />
             </div>
-          </div>
+          </div>A
           <p className="text-white/70 text-sm mt-2">Descubre más</p>
         </div>
       </div>
