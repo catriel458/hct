@@ -34,7 +34,7 @@ const Clients = () => {
       icon: <Building className="w-10 h-10" />,
       description: "Sistema de denuncia por Violencia de Género, desarrollo realizado en PHP. Proyecto UNOPS para la Provincia de Buenos Aires.",
       project: "Sistema de Denuncia por Violencia de Género",
-      image: "https://yt3.googleusercontent.com/m6bVPjkK2E-5pSfTMAiby1QqBENydQ2D6QSbV3vq6ZxQIO99FDrE7Z0IBqvhppo9bNml9HNanlo=s900-c-k-c0x00ffffff-no-rj",
+      image: "https://www.gba.gob.ar/sites/default/files/styles/niticias_principal/public/bsas_1_3.jpg?itok=hlilBCat",
       color: "text-green-600",
       bg: "bg-green-50",
       gradient: "from-green-500 to-emerald-500",

@@ -1,25 +1,8 @@
-// src/components/Services.jsx
 import React from 'react';
-import { Zap, Code, Users, ArrowRight, Target, BarChart3, Settings, CheckCircle, Sparkles } from 'lucide-react';
+import { Code, Users, Settings, ArrowRight, Target, BarChart3, CheckCircle, Sparkles } from 'lucide-react';
 
 const Services = () => {
   const services = [
-    {
-      icon: <Zap className="w-8 h-8" />,
-      title: "Tecnología Deportiva",
-      description: "Entrenamiento cognitivo-motor para mejorar la Percepción, Enfoque, Velocidad de Reacción y Agilidad por medio de entrenamientos simulados. Recopilación y análisis de data.",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      features: [
-        "Sistemas de timing inteligente",
-        "GPS deportivos avanzados",
-        "Elementos cognitivos",
-        "Análisis de data en tiempo real"
-      ],
-      color: "from-purple-500 to-pink-500",
-      bgColor: "bg-purple-50",
-      textColor: "text-purple-600",
-      stats: { value: "95%", label: "Mejora en rendimiento" }
-    },
     {
       icon: <Code className="w-8 h-8" />,
       title: "Desarrollo de Software",

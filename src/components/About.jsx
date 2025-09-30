@@ -28,7 +28,7 @@ const About = () => {
     {
       year: "2020",
       title: "Revolución Deportiva",
-      description: "Se agregó innovación dedicada a representaciones de productos de tecnología deportiva, como lanzapelotas, trackers deportivos, usos de elementos cognitivos.",
+      description: "Se agregó innovación dedicada a la tecnología deportiva en Sportek.",
       image: "https://images.unsplash.com/photo-1566932769119-7a1fb6d7ce23?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       icon: <Trophy className="w-6 h-6" />
     }

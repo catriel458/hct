@@ -16,8 +16,8 @@ function App() {
       <Hero />
       <Services />
       <About />
-      <Innovation />
       <Clients />
+      <Innovation />
       <Contact />
       <Footer />
     </div>
