@@ -61,7 +61,7 @@ const About = () => {
   const achievements = [
     { text: "Desde 2009 en el mercado tecnológico", icon: <Calendar className="w-5 h-5" /> },
     { text: "Representantes de marcas de primer nivel", icon: <Target className="w-5 h-5" /> },
-    { text: "Especialistas en tecnología deportiva", icon: <Zap className="w-5 h-5" /> },
+    // { text: "Especialistas en tecnología deportiva", icon: <Zap className="w-5 h-5" /> },
     { text: "Clientes en sector público y privado", icon: <Award className="w-5 h-5" /> },
     { text: "Desarrollos específicos a medida", icon: <Building className="w-5 h-5" /> }
   ];
