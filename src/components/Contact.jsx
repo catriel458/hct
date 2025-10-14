@@ -1,6 +1,6 @@
 // src/components/Contact.jsx
 import React, { useState } from 'react';
-import { Send, CheckCircle, User, MessageSquare, Mail } from 'lucide-react';
+import { Send, CheckCircle, User, MessageSquare, Mail, X } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,7 +8,8 @@ const Contact = () => {
     email: '',
     message: ''
   });
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null); // 'success' | 'error' | null
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -18,26 +19,65 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        message: ''
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: 'bcc47f58-99c3-42eb-a960-37e395e5265c',
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          subject: `Nueva consulta de ${formData.name} - HCT`,
+          from_name: 'HCT Website'
+        })
       });
-    }, 3000);
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitStatus('success');
+        setFormData({
+          name: '',
+          email: '',
+          message: ''
+        });
+        
+        // Ocultar mensaje de éxito después de 5 segundos
+        setTimeout(() => setSubmitStatus(null), 5000);
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
-  if (isSubmitted) {
+  // Pantalla de éxito completa
+  if (submitStatus === 'success') {
     return (
       <section id="contacto" className="py-32 bg-gradient-to-br from-green-50 to-emerald-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <div className="bg-white rounded-3xl p-16 shadow-2xl border border-green-100">
-              <div className="w-24 h-24 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg">
+            <div className="bg-white rounded-3xl p-16 shadow-2xl border border-green-100 relative">
+              <button
+                onClick={() => setSubmitStatus(null)}
+                className="absolute top-6 right-6 text-gray-400 hover:text-gray-600 transition-colors"
+              >
+                <X className="w-6 h-6" />
+              </button>
+              
+              <div className="w-24 h-24 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-8 shadow-lg animate-bounce">
                 <CheckCircle className="w-12 h-12 text-white" />
               </div>
               <h3 className="text-4xl font-bold text-gray-900 mb-6">
@@ -46,6 +86,12 @@ const Contact = () => {
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 Gracias por contactarnos. Nos pondremos en contacto a la brevedad.
               </p>
+              <button
+                onClick={() => setSubmitStatus(null)}
+                className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-3 px-8 rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-semibold"
+              >
+                Enviar otro mensaje
+              </button>
             </div>
           </div>
         </div>
@@ -82,6 +128,18 @@ const Contact = () => {
         {/* Contact Form */}
         <div className="max-w-3xl mx-auto">
           <div className="bg-white rounded-3xl p-12 shadow-2xl border border-gray-100">
+            
+            {/* Mensaje de error */}
+            {submitStatus === 'error' && (
+              <div className="mb-8 bg-red-50 border border-red-200 rounded-xl p-4 text-center animate-fade-in">
+                <p className="text-red-600 font-semibold flex items-center justify-center space-x-2">
+                  <X className="w-5 h-5" />
+                  <span>Error al enviar el mensaje</span>
+                </p>
+                <p className="text-red-500 text-sm mt-1">Por favor, verifica los datos e intenta nuevamente</p>
+              </div>
+            )}
+
             <form onSubmit={handleSubmit} className="space-y-8">
               {/* Name */}
               <div>
@@ -97,7 +155,8 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleInputChange}
                     required
-                    className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-lg"
+                    disabled={isSubmitting}
+                    className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                     placeholder="Tu nombre"
                   />
                 </div>
@@ -117,7 +176,8 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-lg"
+                    disabled={isSubmitting}
+                    className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                     placeholder="tu@email.com"
                   />
                 </div>
@@ -136,8 +196,9 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     required
+                    disabled={isSubmitting}
                     rows={5}
-                    className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 resize-none text-lg"
+                    className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 resize-none text-lg disabled:opacity-50 disabled:cursor-not-allowed"
                     placeholder="Contanos sobre tu proyecto o consulta..."
                   />
                 </div>
@@ -146,10 +207,20 @@ const Contact = () => {
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-5 px-8 rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-semibold text-lg flex items-center justify-center space-x-3 shadow-xl hover:shadow-2xl hover:scale-105"
+                disabled={isSubmitting}
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-5 px-8 rounded-xl hover:from-blue-700 hover:to-purple-700 transition-all duration-300 font-semibold text-lg flex items-center justify-center space-x-3 shadow-xl hover:shadow-2xl hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
               >
-                <Send className="w-6 h-6" />
-                <span>Enviar Mensaje</span>
+                {isSubmitting ? (
+                  <>
+                    <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-white"></div>
+                    <span>Enviando...</span>
+                  </>
+                ) : (
+                  <>
+                    <Send className="w-6 h-6" />
+                    <span>Enviar Mensaje</span>
+                  </>
+                )}
               </button>
 
               <p className="text-sm text-gray-500 text-center">
