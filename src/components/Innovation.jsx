@@ -1,3 +1,4 @@
+// src/components/Innovation.jsx
 import React from 'react';
 import { Zap, Sparkles, ExternalLink } from 'lucide-react';
 
@@ -28,7 +29,7 @@ const Innovation = () => {
               </h2>
               
               <p className="text-xl text-blue-100 leading-relaxed">
-                Desarrollamos soluciones de entrenamientos automatizados enfocados en los aspectos neurocognitivos de los deportistas. Tecnología deportiva de última generación para mejorar el rendimiento atlético.
+                Desarrollamos soluciones de entrenamientos automatizados enfocados en los aspectos neurocognitivos de los deportistas. Tecnología deportiva para mejorar el rendimiento atlético.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
@@ -49,7 +50,7 @@ const Innovation = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
                 <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/30">
                   <img 
-                    src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="sp4.png"
                     alt="Sportek"
                     className="w-full h-64 object-cover rounded-2xl"
                   />
@@ -61,7 +62,7 @@ const Innovation = () => {
           {/* CTA Button */}
           <div className="mt-12 text-center lg:text-left">
             <a 
-              href="https://sportek-seven.vercel.app/" 
+              href="https://sportek-mauve.vercel.app/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-8 py-4 rounded-2xl font-semibold text-lg hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl group"

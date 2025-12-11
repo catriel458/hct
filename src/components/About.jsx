@@ -6,7 +6,7 @@ const About = () => {
   const timeline = [
     {
       year: "2009",
-      title: "Fundación Estratégica",
+      title: "Fundación",
       description: "HCT SA comenzó como representante o reseller de Hardware y Software de diversas marcas de empresas de primer nivel de IT.",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       icon: <Building className="w-6 h-6" />
@@ -20,14 +20,14 @@ const About = () => {
     },
     {
       year: "2016",
-      title: "Innovación en Desarrollos",
+      title: "Desarrollo de Software",
       description: "Se empezó a incursionar en servicios puntuales requeridos por los clientes, así como en desarrollos específicos para resolver problemáticas o realizar proyectos completos.",
       image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       icon: <Lightbulb className="w-6 h-6" />
     },
     {
       year: "2020",
-      title: "Revolución Deportiva",
+      title: "Tecnología Deportiva",
       description: "Se agregó innovación dedicada a la tecnología deportiva en Sportek.",
       image: "https://images.unsplash.com/photo-1566932769119-7a1fb6d7ce23?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       icon: <Trophy className="w-6 h-6" />
@@ -37,21 +37,21 @@ const About = () => {
   const values = [
     {
       icon: <Lightbulb className="w-8 h-8" />,
-      title: "Innovación Constante",
-      description: "Desarrollamos soluciones específicas para el mercado, como sistemas para automatizar los entrenamientos.",
+      title: "Innovación Continua",
+      description: "Desarrollamos soluciones específicas para el mercado.",
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1115&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       color: "from-blue-500 to-cyan-500"
     },
     {
       icon: <Users className="w-8 h-8" />,
-      title: "Colaboración Estratégica",
+      title: "Trabajo en Equipo",
       description: "Trabajamos en alianza con diferentes empresas para brindar soluciones integrales.",
       image: "https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       color: "from-green-500 to-emerald-500"
     },
     {
       icon: <Trophy className="w-8 h-8" />,
-      title: "Excelencia Garantizada",
+      title: "Compromiso",
       description: "Más de 15 años brindando servicios de IT con implementación y mantenimiento de calidad.",
       image: "https://plus.unsplash.com/premium_photo-1695185954894-e9382c6f4da8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       color: "from-purple-500 to-pink-500"
@@ -61,16 +61,15 @@ const About = () => {
   const achievements = [
     { text: "Desde 2009 en el mercado tecnológico", icon: <Calendar className="w-5 h-5" /> },
     { text: "Representantes de marcas de primer nivel", icon: <Target className="w-5 h-5" /> },
-    // { text: "Especialistas en tecnología deportiva", icon: <Zap className="w-5 h-5" /> },
     { text: "Clientes en sector público y privado", icon: <Award className="w-5 h-5" /> },
     { text: "Desarrollos específicos a medida", icon: <Building className="w-5 h-5" /> }
   ];
 
   const stats = [
     { value: "2009", label: "Año de fundación", color: "text-blue-600" },
-    { value: "100+", label: "Proyectos realizados", color: "text-green-600" },
+    { value: "10+", label: "Proyectos realizados", color: "text-green-600" },
     { value: "15+", label: "Años de servicios IT", color: "text-purple-600" },
-    { value: "24/7", label: "Soporte técnico", color: "text-orange-600" }
+    { value: "Soporte técnico", label: "", color: "text-orange-600" }
   ];
 
   return (
@@ -106,9 +105,9 @@ const About = () => {
           <div className="space-y-10">
             <div className="space-y-8">
               <h3 className="text-4xl font-bold text-gray-900 leading-tight">
-                Transformando el Futuro a Través de la{' '}
+                Desarrollando Soluciones{' '}
                 <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Innovación
+                  Tecnológicas
                 </span>
               </h3>
               <p className="text-xl text-gray-600 leading-relaxed">
@@ -124,7 +123,7 @@ const About = () => {
             {/* Achievements */}
             <div className="space-y-6">
               <h4 className="text-2xl font-bold text-gray-900">
-                Nuestros Logros Destacados
+                Nuestro Recorrido
               </h4>
               <div className="space-y-4">
                 {achievements.map((achievement, index) => (
@@ -180,17 +179,17 @@ const About = () => {
           </div>
         </div>
 
-        {/* Timeline Section - Continúa igual estructura pero con el texto actualizado */}
+        {/* Timeline Section */}
         <div className="mb-32">
           <div className="text-center mb-16">
             <h3 className="text-4xl font-bold text-gray-900 mb-6">
-              Nuestra Evolución{' '}
+              Nuestra{' '}
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Histórica
+                Evolución
               </span>
             </h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Un recorrido por los hitos que nos han convertido en líderes de la innovación tecnológica
+              Los hitos que nos han llevado a donde estamos hoy
             </p>
           </div>
 
@@ -257,7 +256,7 @@ const About = () => {
               </span>
             </h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Los principios fundamentales que guían cada decisión y acción en HCT Group
+              Los principios que guían nuestro trabajo en HCT Group
             </p>
           </div>
 

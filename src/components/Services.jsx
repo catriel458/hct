@@ -1,12 +1,13 @@
+// src/components/Services.jsx
 import React from 'react';
-import { Code, Users, Settings, ArrowRight, Target, BarChart3, CheckCircle, Sparkles } from 'lucide-react';
+import { Code, Users, Settings, ArrowRight, Target, BarChart3, CheckCircle, Sparkles, Wrench } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
       icon: <Code className="w-8 h-8" />,
       title: "Desarrollo de Software",
-      description: "Soluciones digitales a medida para cada Cliente. Desarrollamos sistemas que logran dar una respuesta adecuada para cada requerimiento.",
+      description: "Soluciones digitales a medida para cada Cliente. Desarrollamos sistemas que brindan respuestas adecuadas para cada requerimiento.",
       image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       features: [
         "Sistemas a medida",
@@ -17,7 +18,7 @@ const Services = () => {
       color: "from-blue-500 to-cyan-500",
       bgColor: "bg-blue-50",
       textColor: "text-blue-600",
-      stats: { value: "100+", label: "Proyectos entregados" }
+      stats: { value: "10+", label: "Proyectos entregados" }
     },
     {
       icon: <Users className="w-8 h-8" />,
@@ -38,7 +39,7 @@ const Services = () => {
     {
       icon: <Settings className="w-8 h-8" />,
       title: "Servicios IT",
-      description: "Tenemos más de 10 años brindando servicios de IT. Implementación. Mantenimiento.",
+      description: "Más de 10 años brindando servicios de IT. Implementación y Mantenimiento.",
       image: "https://images.unsplash.com/photo-1607799279861-4dd421887fb3?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       features: [
         "Asesoramiento técnico",
@@ -50,24 +51,40 @@ const Services = () => {
       bgColor: "bg-orange-50",
       textColor: "text-orange-600",
       stats: { value: "15+", label: "Años de experiencia" }
+    },
+    {
+      icon: <Wrench className="w-8 h-8" />,
+      title: "Soporte API",
+      description: "Desarrollo y mantenimiento de APIs en PHP para integración de sistemas y aplicaciones.",
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      features: [
+        "Desarrollo en PHP",
+        "Integración de sistemas",
+        "Mantenimiento continuo",
+        "Documentación técnica"
+      ],
+      color: "from-purple-500 to-indigo-500",
+      bgColor: "bg-purple-50",
+      textColor: "text-purple-600",
+      stats: { value: "5+", label: "APIs desarrolladas" }
     }
   ];
 
   const processSteps = [
     {
       icon: <Target className="w-8 h-8" />,
-      title: "Análisis Estratégico",
-      description: "Evaluamos profundamente sus necesidades y objetivos para diseñar la solución perfecta"
+      title: "Análisis de Necesidades",
+      description: "Evaluamos sus necesidades y objetivos para diseñar la mejor solución"
     },
     {
       icon: <Settings className="w-8 h-8" />,
-      title: "Desarrollo Ágil",
-      description: "Implementamos metodologías ágiles para crear soluciones innovadoras y eficientes"
+      title: "Desarrollo",
+      description: "Implementamos soluciones eficientes y adaptadas a sus requerimientos"
     },
     {
       icon: <BarChart3 className="w-8 h-8" />,
-      title: "Implementación Exitosa",
-      description: "Desplegamos y optimizamos su solución con soporte continuo y mejoras constantes"
+      title: "Implementación",
+      description: "Desplegamos su solución con soporte continuo y mejoras"
     }
   ];
 
@@ -93,7 +110,7 @@ const Services = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Conozca nuestro portafolio de servicios
+            Soluciones tecnológicas adaptadas a sus necesidades
           </p>
         </div>
 
@@ -173,11 +190,11 @@ const Services = () => {
             <h3 className="text-4xl font-bold text-gray-900 mb-6">
               Nuestro Proceso de{' '}
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Excelencia
+                Trabajo
               </span>
             </h3>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Metodología probada y refinada para garantizar el éxito de cada proyecto
+              Metodología enfocada en resolver sus necesidades específicas
             </p>
           </div>
 

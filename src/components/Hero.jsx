@@ -26,7 +26,7 @@ const Hero = () => {
             {/* Badge */}
             <div className="inline-flex items-center px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full text-sm font-medium">
               <Star className="w-4 h-4 mr-2 text-yellow-400" />
-              Líderes en innovación tecnológica desde 2009
+              Brindando soluciones tecnológicas desde 2009
             </div>
             
             {/* Main Heading */}
@@ -43,8 +43,7 @@ const Hero = () => {
               </h1>
               
               <p className="text-xl lg:text-2xl text-blue-100 leading-relaxed max-w-4xl mx-auto">
-                Desarrollamos tecnología avanzada para revolucionar operaciones empresariales 
-                y potenciar el rendimiento deportivo con soluciones que marcan la diferencia.
+                Desarrollamos tecnología avanzada para solucionar operaciones empresariales.
               </p>
             </div>
 
@@ -67,7 +66,7 @@ const Hero = () => {
             <div className="w-8 h-8 border-2 border-white/50 rounded-full flex items-center justify-center">
               <ArrowRight className="w-4 h-4 text-white/70 rotate-90" />
             </div>
-          </div>A
+          </div>
           <p className="text-white/70 text-sm mt-2">Descubre más</p>
         </div>
       </div>
