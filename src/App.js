@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import MisionVision from './components/MisionVision';  // ← nuevo
 import Services from './components/Services';
 import About from './components/About';
 import Innovation from './components/Innovation';
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <Header />
       <Hero />
+      <MisionVision />
       <Services />
       <About />
       <Clients />
