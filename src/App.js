@@ -7,6 +7,7 @@ import Services from './components/Services';
 import TechServices from './components/TechServices';
 import About from './components/About';
 import Innovation from './components/Innovation';
+import TnB from './components/TnB';
 import Clients from './components/Clients';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -22,6 +23,7 @@ function App() {
       <About />
       <Clients />
       <Innovation />
+      <TnB />
       <Contact />
       <Footer />
     </div>
