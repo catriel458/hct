@@ -29,7 +29,7 @@ const TnB = () => {
               </h2>
               
               <p className="text-xl text-purple-100 leading-relaxed">
-                Una innovadora plataforma de e-commerce de moda desarrollada por HCT y CodeFalcon, equipada con un probador virtual inteligente que revoluciona la experiencia de compra online haciéndola interactiva y personalizada.
+                Una innovadora plataforma de e-commerce de moda desarrollada por HCT, equipada con un probador virtual inteligente que revoluciona la experiencia de compra online haciéndola interactiva y personalizada.
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
