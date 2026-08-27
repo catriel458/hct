@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import MisionVision from './components/MisionVision';  // ← nuevo
 import Services from './components/Services';
+import TechServices from './components/TechServices';
 import About from './components/About';
 import Innovation from './components/Innovation';
 import Clients from './components/Clients';
@@ -17,6 +18,7 @@ function App() {
       <Hero />
       <MisionVision />
       <Services />
+      <TechServices />
       <About />
       <Clients />
       <Innovation />
